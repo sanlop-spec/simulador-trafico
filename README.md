@@ -1,4 +1,4 @@
-# 🚦 Apizaco Macro-Traffic Simulator Pro
+#  Apizaco Macro-Traffic Simulator Pro
 
 Plataforma interactiva de simulación macroscópica de tráfico urbano y análisis de redes viales para la ciudad de **Apizaco, Tlaxcala**. 
 
@@ -6,11 +6,11 @@ Desarrollado con **TypeScript (HTML5 Canvas API)**, aplicando modelos de **Teor�
 
 ---
 
-## 🎯 Características Principales
+##  Características Principales
 
 - **Simulación Multi-Agente Heterogénea:** Modelado dinámico con variabilidad de flota (Autos particulares, Autobuses y Camiones de Carga).
 - **Control Adaptativo de Semáforos:** Algoritmo de sincronización en tiempo real basado en colas de espera vs. semáforo de tiempo fijo.
-- **Respuesta a Incidentes en Tiempo Real:** Detección de clics para generar accidentes (`⚠️ ACCIDENTE`) y cierres de vía (`⛔ CERRADO`) con re-enrutamiento automático de vehículos.
+- **Respuesta a Incidentes en Tiempo Real:** Detección de clics para generar accidentes (` ACCIDENTE`) y cierres de vía (` CERRADO`) con re-enrutamiento automático de vehículos.
 - **Modelos Duales de Ruteo:**
   - *Instinto Individual (User Equilibrium / Nash):* Principio 1 de Wardrop.
   - *IA Ruteadora (System Optimal):* Principio 2 de Wardrop.
@@ -19,7 +19,7 @@ Desarrollado con **TypeScript (HTML5 Canvas API)**, aplicando modelos de **Teor�
 
 ---
 
-## 📐 Modelo Matemático (Función BPR)
+##  Modelo Matemático (Función BPR)
 
 La impedancia vial para cada tramo $i$ se calcula mediante:
 
@@ -30,20 +30,3 @@ Donde:
 - $v_i$: Flujo vehicular actual (vehículos/hora).
 - $c_i$: Capacidad de diseño de la vía.
 - $\alpha = 0.15, \beta = 4.0$: Parámetros BPR estándar de calibración urbana.
-
----
-
-## 🚀 Instalación y Ejecución Local
-
-```bash
-# Clonar el repositorio
-git clone [https://github.com/tu-usuario/apizaco-traffic-simulator.git](https://github.com/tu-usuario/apizaco-traffic-simulator.git)
-
-# Entrar al directorio web
-cd macrotraffic-simulator/web
-
-# Instalar dependencias
-npm install
-
-# Iniciar servidor de desarrollo
-npx vite
